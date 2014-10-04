@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CAC260C19E0629400882861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC260B19E0629400882861 /* main.m */; };
+		0CAC260F19E0629400882861 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC260E19E0629400882861 /* AppDelegate.m */; };
+		0CAC261119E0629400882861 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC261019E0629400882861 /* Images.xcassets */; };
+		0CAC261419E0629400882861 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC261219E0629400882861 /* MainMenu.xib */; };
+		0CAC262019E0629400882861 /* MacInTalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC261F19E0629400882861 /* MacInTalkTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CAC261A19E0629400882861 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CAC25FE19E0629300882861 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CAC260519E0629300882861;
+			remoteInfo = MacInTalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CAC260619E0629400882861 /* MacInTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacInTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAC260A19E0629400882861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAC260B19E0629400882861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0CAC260D19E0629400882861 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0CAC260E19E0629400882861 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0CAC261019E0629400882861 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0CAC261319E0629400882861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0CAC261919E0629400882861 /* MacInTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacInTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAC261E19E0629400882861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAC261F19E0629400882861 /* MacInTalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacInTalkTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CAC260319E0629300882861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAC261619E0629400882861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CAC25FD19E0629300882861 = {
+			isa = PBXGroup;
+			children = (
+				0CAC260819E0629400882861 /* MacInTalk */,
+				0CAC261C19E0629400882861 /* MacInTalkTests */,
+				0CAC260719E0629400882861 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CAC260719E0629400882861 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC260619E0629400882861 /* MacInTalk.app */,
+				0CAC261919E0629400882861 /* MacInTalkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CAC260819E0629400882861 /* MacInTalk */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC260D19E0629400882861 /* AppDelegate.h */,
+				0CAC260E19E0629400882861 /* AppDelegate.m */,
+				0CAC261019E0629400882861 /* Images.xcassets */,
+				0CAC261219E0629400882861 /* MainMenu.xib */,
+				0CAC260919E0629400882861 /* Supporting Files */,
+			);
+			path = MacInTalk;
+			sourceTree = "<group>";
+		};
+		0CAC260919E0629400882861 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC260A19E0629400882861 /* Info.plist */,
+				0CAC260B19E0629400882861 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0CAC261C19E0629400882861 /* MacInTalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC261F19E0629400882861 /* MacInTalkTests.m */,
+				0CAC261D19E0629400882861 /* Supporting Files */,
+			);
+			path = MacInTalkTests;
+			sourceTree = "<group>";
+		};
+		0CAC261D19E0629400882861 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC261E19E0629400882861 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CAC260519E0629300882861 /* MacInTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CAC262319E0629400882861 /* Build configuration list for PBXNativeTarget "MacInTalk" */;
+			buildPhases = (
+				0CAC260219E0629300882861 /* Sources */,
+				0CAC260319E0629300882861 /* Frameworks */,
+				0CAC260419E0629300882861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacInTalk;
+			productName = MacInTalk;
+			productReference = 0CAC260619E0629400882861 /* MacInTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CAC261819E0629400882861 /* MacInTalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CAC262619E0629400882861 /* Build configuration list for PBXNativeTarget "MacInTalkTests" */;
+			buildPhases = (
+				0CAC261519E0629400882861 /* Sources */,
+				0CAC261619E0629400882861 /* Frameworks */,
+				0CAC261719E0629400882861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CAC261B19E0629400882861 /* PBXTargetDependency */,
+			);
+			name = MacInTalkTests;
+			productName = MacInTalkTests;
+			productReference = 0CAC261919E0629400882861 /* MacInTalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CAC25FE19E0629300882861 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = ACM;
+				TargetAttributes = {
+					0CAC260519E0629300882861 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					0CAC261819E0629400882861 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 0CAC260519E0629300882861;
+					};
+				};
+			};
+			buildConfigurationList = 0CAC260119E0629300882861 /* Build configuration list for PBXProject "MacInTalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CAC25FD19E0629300882861;
+			productRefGroup = 0CAC260719E0629400882861 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CAC260519E0629300882861 /* MacInTalk */,
+				0CAC261819E0629400882861 /* MacInTalkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CAC260419E0629300882861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAC261119E0629400882861 /* Images.xcassets in Resources */,
+				0CAC261419E0629400882861 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAC261719E0629400882861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CAC260219E0629300882861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAC260F19E0629400882861 /* AppDelegate.m in Sources */,
+				0CAC260C19E0629400882861 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAC261519E0629400882861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAC262019E0629400882861 /* MacInTalkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CAC261B19E0629400882861 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CAC260519E0629300882861 /* MacInTalk */;
+			targetProxy = 0CAC261A19E0629400882861 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0CAC261219E0629400882861 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CAC261319E0629400882861 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CAC262119E0629400882861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0CAC262219E0629400882861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0CAC262419E0629400882861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacInTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0CAC262519E0629400882861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacInTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0CAC262719E0629400882861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MacInTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacInTalk.app/Contents/MacOS/MacInTalk";
+			};
+			name = Debug;
+		};
+		0CAC262819E0629400882861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MacInTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacInTalk.app/Contents/MacOS/MacInTalk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CAC260119E0629300882861 /* Build configuration list for PBXProject "MacInTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAC262119E0629400882861 /* Debug */,
+				0CAC262219E0629400882861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CAC262319E0629400882861 /* Build configuration list for PBXNativeTarget "MacInTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAC262419E0629400882861 /* Debug */,
+				0CAC262519E0629400882861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0CAC262619E0629400882861 /* Build configuration list for PBXNativeTarget "MacInTalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAC262719E0629400882861 /* Debug */,
+				0CAC262819E0629400882861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CAC25FE19E0629300882861 /* Project object */;
+}
