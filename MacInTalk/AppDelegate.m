@@ -12,14 +12,14 @@
 
 @property (weak) IBOutlet NSWindow *window;
 @property (unsafe_unretained) IBOutlet NSTextView *textToSpeak;
-@property (weak) IBOutlet NSTableView *voiceTable;
+
 @property (weak) IBOutlet NSButton *speakButton;
 @property (weak) IBOutlet NSSlider *rateSlider;
 @property (weak) IBOutlet NSSlider *volumeSlider;
 
 @property (retain) NSSpeechSynthesizer *speechSynth;
 @property (retain) NSMutableArray *voices;
-@property (retain) NSMutableArray *voiceNames;
+
 
 @property BOOL speaking;
 @property NSInteger currentVoice;
@@ -28,6 +28,7 @@
 @end
 
 @implementation AppDelegate
+@synthesize voiceTable, voiceNames;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     self.speechSynth = [[NSSpeechSynthesizer alloc] initWithVoice:nil];
@@ -75,6 +76,7 @@
 #pragma mark - IBActions
 
 - (IBAction)toggleSpeak:(id)sender {
+    //NSLog(@"Toggle speaking: %hhd", self.speaking);
     if (_speaking) {
         // Will stop speaking
         [self.speechSynth stopSpeaking];
@@ -83,9 +85,13 @@
     }
     else {
         // Will start speaking
+        //NSLog(@"Checking length");
         if (self.textToSpeak.string.length == 0) return;
+        //NSLog(@"Length not zero. Starting speech.");
         [self.speechSynth startSpeakingString:self.textToSpeak.string];
+        //NSLog(@"Started speech. Changing button.");
         self.speakButton.title = @"Stop";
+        //NSLog(@"Button changed. Speaking.");
         self.speaking = YES;
     }
 }

@@ -8,16 +8,17 @@
 
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
+#import "AppDelegate.h"
 
 @interface MacInTalkTests : XCTestCase
-
+@property (nonatomic, retain) AppDelegate *ad;
 @end
 
 @implementation MacInTalkTests
-
+@synthesize ad;
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    ad = (AppDelegate *)[[NSApplication sharedApplication] delegate];
 }
 
 - (void)tearDown {
@@ -26,8 +27,10 @@
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+    NSInteger tableCount = ad.voiceTable.numberOfRows;
+    NSInteger voiceCount = ad.voiceNames.count;
+    
+    XCTAssertTrue(tableCount == voiceCount, @"table rows (%ld) and voice counts (%ld) not equal", (long)tableCount, (long)voiceCount);
 }
 
 - (void)testPerformanceExample {

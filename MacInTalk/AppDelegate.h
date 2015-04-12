@@ -9,5 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate, NSTableViewDataSource, NSTableViewDelegate, NSSpeechSynthesizerDelegate>
+@property (nonatomic, weak) IBOutlet NSTableView *voiceTable;
+@property (retain) NSMutableArray *voiceNames;
 @end
 
