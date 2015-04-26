@@ -26,7 +26,7 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testVoiceList {
     NSInteger tableCount = ad.voiceTable.numberOfRows;
     NSInteger voiceCount = ad.voiceNames.count;
     
