@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CAC260C19E0629400882861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC260B19E0629400882861 /* main.m */; };
-		0CAC260F19E0629400882861 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC260E19E0629400882861 /* AppDelegate.m */; };
 		0CAC261119E0629400882861 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC261019E0629400882861 /* Images.xcassets */; };
 		0CAC261419E0629400882861 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC261219E0629400882861 /* MainMenu.xib */; };
 		0CAC262019E0629400882861 /* MacInTalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAC261F19E0629400882861 /* MacInTalkTests.m */; };
@@ -28,9 +26,6 @@
 /* Begin PBXFileReference section */
 		0CAC260619E0629400882861 /* MacInTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacInTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAC260A19E0629400882861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CAC260B19E0629400882861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0CAC260D19E0629400882861 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0CAC260E19E0629400882861 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0CAC261019E0629400882861 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0CAC261319E0629400882861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0CAC261919E0629400882861 /* MacInTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacInTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,8 +74,6 @@
 		0CAC260819E0629400882861 /* MacInTalk */ = {
 			isa = PBXGroup;
 			children = (
-				0CAC260D19E0629400882861 /* AppDelegate.h */,
-				0CAC260E19E0629400882861 /* AppDelegate.m */,
 				0CAC261019E0629400882861 /* Images.xcassets */,
 				0CAC261219E0629400882861 /* MainMenu.xib */,
 				0CAC260919E0629400882861 /* Supporting Files */,
@@ -94,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				0CAC260A19E0629400882861 /* Info.plist */,
-				0CAC260B19E0629400882861 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -217,8 +209,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BF86FD01BEB25D600AEC2C2 /* AppDelegate.swift in Sources */,
-				0CAC260F19E0629400882861 /* AppDelegate.m in Sources */,
-				0CAC260C19E0629400882861 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
