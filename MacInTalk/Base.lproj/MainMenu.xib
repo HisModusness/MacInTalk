@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
         <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <objects>
@@ -326,7 +326,6 @@
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="l87-P4-Qyv">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
@@ -350,7 +349,6 @@
                                                     <subviews>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6tp-oQ-l9V">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
-                                                            <animations/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="7K2-dJ-l4S">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -361,7 +359,6 @@
                                                             </connections>
                                                         </textField>
                                                     </subviews>
-                                                    <animations/>
                                                     <connections>
                                                         <outlet property="textField" destination="6tp-oQ-l9V" id="TQZ-Zl-4a3"/>
                                                     </connections>
@@ -375,22 +372,18 @@
                                     </connections>
                                 </tableView>
                             </subviews>
-                            <animations/>
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <constraints>
                             <constraint firstAttribute="width" constant="152" id="SVS-Ro-mDV"/>
                         </constraints>
-                        <animations/>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="al8-ZN-6MW">
                             <rect key="frame" x="1" y="119" width="223" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
-                            <animations/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="1mc-pG-dGu">
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
-                            <animations/>
                         </scroller>
                     </scrollView>
                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kip-xu-RDN">
@@ -402,7 +395,6 @@
                                 <textView importsGraphics="NO" richText="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="Bfh-Q1-hp0">
                                     <rect key="frame" x="0.0" y="0.0" width="379" height="285"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <animations/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <size key="minSize" width="379" height="285"/>
                                     <size key="maxSize" width="566" height="10000000"/>
@@ -411,19 +403,15 @@
                                     <size key="maxSize" width="566" height="10000000"/>
                                 </textView>
                             </subviews>
-                            <animations/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </clipView>
-                        <animations/>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="J96-ns-JAb">
                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                             <autoresizingMask key="autoresizingMask"/>
-                            <animations/>
                         </scroller>
                         <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="myy-Ys-dhI">
                             <rect key="frame" x="364" y="1" width="16" height="285"/>
                             <autoresizingMask key="autoresizingMask"/>
-                            <animations/>
                         </scroller>
                     </scrollView>
                     <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3J7-Bv-SmJ">
@@ -431,7 +419,6 @@
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="r71-m3-GBQ">
                                 <rect key="frame" x="-6" y="-7" width="78" height="32"/>
-                                <animations/>
                                 <buttonCell key="cell" type="push" title="Speak" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HZD-7n-uHc">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -441,7 +428,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <visibilityPriorities>
                             <integer value="1000"/>
                         </visibilityPriorities>
@@ -460,14 +446,12 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="4Cx-HJ-4Fo"/>
                                         </constraints>
-                                        <animations/>
                                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="90" maxValue="360" doubleValue="225" tickMarkPosition="below" numberOfTickMarks="5" sliderType="linear" id="ZyY-Vh-Dh5"/>
                                         <connections>
                                             <action selector="rateChanged:" target="Voe-Tx-rLC" id="zD6-W9-C3B"/>
                                         </connections>
                                     </slider>
                                 </subviews>
-                                <animations/>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
                                 </visibilityPriorities>
@@ -476,7 +460,6 @@
                                 </customSpacing>
                             </stackView>
                         </subviews>
-                        <animations/>
                         <visibilityPriorities>
                             <integer value="1000"/>
                         </visibilityPriorities>
@@ -489,7 +472,6 @@
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Leb-da-QuA">
                                 <rect key="frame" x="-2" y="0.0" width="36" height="17"/>
-                                <animations/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Rate:" id="qqa-IR-Pju">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -497,7 +479,6 @@
                                 </textFieldCell>
                             </textField>
                         </subviews>
-                        <animations/>
                         <visibilityPriorities>
                             <integer value="1000"/>
                         </visibilityPriorities>
@@ -510,7 +491,6 @@
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UlX-R0-eUg">
                                 <rect key="frame" x="-2" y="0.0" width="53" height="17"/>
-                                <animations/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Volume:" id="0Xj-DG-SX2">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -518,7 +498,6 @@
                                 </textFieldCell>
                             </textField>
                         </subviews>
-                        <animations/>
                         <visibilityPriorities>
                             <integer value="1000"/>
                         </visibilityPriorities>
@@ -534,14 +513,12 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="4ze-uy-crs"/>
                                 </constraints>
-                                <animations/>
                                 <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="below" numberOfTickMarks="5" sliderType="linear" id="9fC-bg-TMv"/>
                                 <connections>
                                     <action selector="volumeChanged:" target="Voe-Tx-rLC" id="QHL-dz-VVo"/>
                                 </connections>
                             </slider>
                         </subviews>
-                        <animations/>
                         <visibilityPriorities>
                             <integer value="1000"/>
                         </visibilityPriorities>
@@ -559,7 +536,6 @@
                     <constraint firstItem="rKy-jL-KEa" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="bNp-8p-O4I"/>
                     <constraint firstItem="Kip-xu-RDN" firstAttribute="leading" secondItem="rKy-jL-KEa" secondAttribute="trailing" constant="8" symbolic="YES" id="gdQ-gM-ztE"/>
                 </constraints>
-                <animations/>
             </view>
             <point key="canvasLocation" x="357.5" y="325"/>
         </window>

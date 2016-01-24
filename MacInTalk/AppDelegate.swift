@@ -10,13 +10,14 @@ import Foundation
 import Cocoa
 
 @NSApplicationMain
+@objc(AppDelegate)
 class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechSynthesizerDelegate, NSTableViewDelegate, NSTableViewDataSource {
-    @IBOutlet weak var window: NSWindow!
-    @IBOutlet weak var textToSpeak: NSTextView!
+    @IBOutlet var window: NSWindow!
+    @IBOutlet var textToSpeak: NSTextView!
     
-    @IBOutlet weak var speakButton: NSButton!
-    @IBOutlet weak var rateSlider: NSSlider!
-    @IBOutlet weak var volumeSlider: NSSlider!
+    @IBOutlet var speakButton: NSButton!
+    @IBOutlet var rateSlider: NSSlider!
+    @IBOutlet var volumeSlider: NSSlider!
     
     @IBOutlet weak var voiceTable: NSTableView!
     
