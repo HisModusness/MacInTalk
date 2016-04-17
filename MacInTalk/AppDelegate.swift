@@ -22,7 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechSynthesizerDelegate,
     @IBOutlet weak var voiceTable: NSTableView!
     
     var speechSynth: NSSpeechSynthesizer = NSSpeechSynthesizer.init()
-    var voices: NSMutableArray = []
+    var voices: [String] = []
     
     var speaking: Bool = false
     var currentVoice: Int = 0
@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechSynthesizerDelegate,
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         speechSynth.delegate = self
-        currentVoice = voices.indexOfObjectIdenticalTo(speechSynth.voice()!)
+        currentVoice = voices.indexOf(speechSynth.voice()!)!
         
         let indexSet: NSIndexSet = NSIndexSet.init(index: currentVoice)
         voiceTable.selectRowIndexes(indexSet, byExtendingSelection: false)
@@ -52,20 +52,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechSynthesizerDelegate,
     override func awakeFromNib() {
         speaking = false
         
-        voices = NSMutableArray.init(array: NSSpeechSynthesizer.availableVoices())
+        voices = NSSpeechSynthesizer.availableVoices()
         
-        for voice: NSString in voices as NSArray as! [String] {
-            var components: [String] = voice.componentsSeparatedByString(".")
-            if (components[components.count - 1] == "premium") {
-                voiceNames.addObject(components[components.count - 2].capitalizedString)
-            } else {
-                voiceNames.addObject(components[components.count - 1].capitalizedString)
-            }
+        for voice: String in voices {
+            let attributes = NSSpeechSynthesizer.attributesForVoice(voice as String);
+            voiceNames.addObject(attributes[NSVoiceName]! as! String)
         }
-    }
-    
-    func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
     }
     
     func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
@@ -99,7 +91,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechSynthesizerDelegate,
     }
     
     // MARK: - TableView Data Source
-    
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {
         return voiceNames.count
     }
@@ -114,7 +105,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechSynthesizerDelegate,
     // MARK: - TableView Delegate
     func tableViewSelectionDidChange(notification: NSNotification) {
         currentVoice = voiceTable.selectedRow
-        speechSynth.setVoice(voices[currentVoice] as? String)
+        speechSynth.setVoice(voices[currentVoice])
     }
     
     // MARK: - Speech Synthesizer Delegate
