@@ -34,12 +34,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechSynthesizerDelegate,
     let speakButtonStart: String = "Speak"
     let speakButtonStop: String = "Stop"
     
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_: Notification) {
         speechSynth.delegate = self
-        currentVoice = voices.indexOf(speechSynth.voice()!)!
+        currentVoice = voices.index(of: speechSynth.voice()!)!
         
         let indexSet: NSIndexSet = NSIndexSet.init(index: currentVoice)
-        voiceTable.selectRowIndexes(indexSet, byExtendingSelection: false)
+        voiceTable.selectRowIndexes(indexSet as IndexSet, byExtendingSelection: false)
         voiceTable.scrollRowToVisible(currentVoice)
         
         rate = Double(speechSynth.rate)
@@ -55,17 +55,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechSynthesizerDelegate,
         voices = NSSpeechSynthesizer.availableVoices()
         
         for voice: String in voices {
-            let attributes = NSSpeechSynthesizer.attributesForVoice(voice as String);
-            voiceNames.addObject(attributes[NSVoiceName]! as! String)
+            let attributes = NSSpeechSynthesizer.attributes(forVoice: voice as String);
+            voiceNames.add(attributes[NSVoiceName]! as! String)
         }
     }
     
-    func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true;
     }
     
     // MARK: - IBActions
-    @IBAction func toggleSpeak(sender: AnyObject) {
+    @IBAction func toggleSpeak(_: AnyObject) {
         if (speaking) {
             speechSynth.stopSpeaking()
             speakButton.title = speakButtonStart
@@ -74,28 +74,29 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechSynthesizerDelegate,
             if (textToSpeak.string!.characters.count == 0) {
                 return
             }
-            speechSynth.startSpeakingString(textToSpeak.string!)
+            speechSynth.startSpeaking(textToSpeak.string!)
             speakButton.title = speakButtonStop
             speaking = true
         }
     }
     
-    @IBAction func rateChanged(sender: AnyObject) {
+    @IBAction func rateChanged(_: AnyObject) {
         rate = rateSlider.doubleValue
         speechSynth.rate = Float(rate)
     }
     
-    @IBAction func volumeChanged(sender: AnyObject) {
+    @IBAction func volumeChanged(_: AnyObject) {
         volume = volumeSlider.doubleValue
         speechSynth.volume = Float(volume)
     }
     
     // MARK: - TableView Data Source
-    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
+    
+    func numberOfRows(in: NSTableView) -> Int {
         return voiceNames.count
     }
     
-    func tableView(tableView: NSTableView, objectValueForTableColumn tableColumn: NSTableColumn?, row: Int) -> AnyObject? {
+    func tableView(_: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
         if (tableColumn == voiceTable.tableColumns[0]) {
             return voiceNames[row]
         }
@@ -103,13 +104,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSSpeechSynthesizerDelegate,
     }
     
     // MARK: - TableView Delegate
-    func tableViewSelectionDidChange(notification: NSNotification) {
+    func tableViewSelectionDidChange(_ notification: Notification) {
         currentVoice = voiceTable.selectedRow
         speechSynth.setVoice(voices[currentVoice])
     }
     
     // MARK: - Speech Synthesizer Delegate
-    func speechSynthesizer(sender: NSSpeechSynthesizer, didFinishSpeaking finishedSpeaking: Bool) {
+    func speechSynthesizer(_ sender: NSSpeechSynthesizer, didFinishSpeaking finishedSpeaking: Bool) {
         speaking = false
         speakButton.title = speakButtonStart
     }
